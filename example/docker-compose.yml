@@ -1,0 +1,29 @@
+
+services:
+
+  # Scan folder example
+  # http://127.0.0.1:3000/
+  ncdu-web-viewer-example0:
+    build: ../
+    image: abesesr/ncdu-web-viewer:local
+    container_name: ncdu-web-viewer-example0
+    environment:
+      NCDU_WEB_VIEWER_SCAN_FROM: "folder"
+    volumes:
+      - ../:/folder-to-scan/
+    ports:
+      - 3000:3000
+
+  # Dump example
+  # http://127.0.0.1:3001/
+  ncdu-web-viewer-example1:
+    build: ../
+    image: abesesr/ncdu-web-viewer:local
+    container_name: ncdu-web-viewer-example1
+    environment:
+      NCDU_WEB_VIEWER_SCAN_FROM: "dump"
+    volumes:
+      - ./ncdu-dump-example.json:/ncdu-dump.json
+    ports:
+      - 3001:3000
+
