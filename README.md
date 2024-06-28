@@ -4,6 +4,9 @@ Web interface used to visualize and navigate through [ncdu](https://dev.yorhel.n
 
 This tool could be used internaly at [Abes](https://abes.fr) for analyze and cleanup steps when manipulating massive data. Thanks to the web interface it makes easier to give this tool to a librarian. Thanks to the ``dump`` feature, it makes easier to analyze very big folder so that only one guy will generate the export/dump of a given folder and all the staff will be able to view it concurrently without generating performance isues on this big folder.
 
+![image](https://github.com/kerphi/ncdu-web-viewer/assets/328244/84be8aaf-1f8e-4231-a458-1a70d6d84046)
+
+
 ## Prerequisites
 
 - docker
