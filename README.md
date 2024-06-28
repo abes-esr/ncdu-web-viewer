@@ -50,6 +50,19 @@ docker run --rm \
 
 Then open your web browser (replace 127.0.0.1 by your server ip): http://127.0.0.1:3000/wetty/
 
+## Developments and debug
+
+To develop or debug ncdu-web-viewer, you can use the docker-compose.yml in the example folder this way: 
+```bash
+cd example/
+docker compose up
+```
+
+Then navigate to http://127.0.0.1:3000 or http://127.0.0.1:3001 to test the two features.
+
+Then CTRL+C, modify the code, and ``docker compose up`` again to test your modification.
+
+
 ## Deployment
 
 This [repository](https://github.com/abes-esr/ncdu-web-viewer-docker/) gives a docker-compose.yml / .env example.
@@ -62,4 +75,11 @@ TODO
 
 - [wetty](https://github.com/butlerx/wetty)
 - [ncdu](https://dev.yorhel.nl/ncdu)
+
+## See also
+
+- https://pacroy.com/setup-web-terminal-using-wetty-docker-image-dcb1ea75bfaf
+- https://github.com/josephpaul0/tdu
+- https://github.com/Byron/dua-cli
+- https://github.com/konosubakonoakua/ncdu-zig
 
