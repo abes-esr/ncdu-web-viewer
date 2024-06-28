@@ -29,7 +29,7 @@ docker run --rm \
   -p 3000:3000 abesesr/ncdu-web-viewer
 ```
 
-Then open your web browser (replace 127.0.0.1 by your server ip): http://127.0.0.1:3000/wetty/
+Then open your web browser (replace 127.0.0.1 by your server ip): http://127.0.0.1:3000/
 
 ### Usage : view a ncdu dump
 
