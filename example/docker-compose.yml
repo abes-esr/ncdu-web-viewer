@@ -27,3 +27,17 @@ services:
     ports:
       - 3001:3000
 
+  # Scan folder with write access example
+  # http://127.0.0.1:3002/
+  ncdu-web-viewer-example2:
+    build: ../
+    image: abesesr/ncdu-web-viewer:local
+    container_name: ncdu-web-viewer-example2
+    environment:
+      NCDU_WEB_VIEWER_SCAN_FROM: "folder"
+      NCDU_WEB_VIEWER_READONLY: "no"
+    volumes:
+      - ../:/folder-to-scan/
+    ports:
+      - 3002:3000
+

@@ -13,9 +13,10 @@ This tool could be used internaly at [Abes](https://abes.fr) for analyze and cle
 
 ## Parameters
 
-- ``NCDU_WEB_VIEWER_SCAN_FROM`` : two values are allowed (``folder`` or ``dump``)
+- ``NCDU_WEB_VIEWER_SCAN_FROM``: two values are allowed (``folder`` or ``dump``)
   - if ``folder`` (default value) then it will tell ncdu to scan the ``/folder-to-scan/`` folder in the current container.
   - if ``dump``, then it will tell ncdu to import the ``/opt/ncdu-dump-applis.json`` and view its content (instead of scanning a folder).
+- ``NCDU_WEB_VIEWER_READONLY``: to enable or disable ncdu readonly feature (``yes`` by default, only used with NCDU_WEB_VIEWER_SCAN_FROM=folder feature)
 
 ### Usage : view a folder after scanning it
 
@@ -25,6 +26,7 @@ Example if you want to analyze the ``/applis/`` folder on your docker host:
 ```bash
 docker run --rm \
   -e NCDU_WEB_VIEWER_SCAN_FROM=folder \
+  -e NCDU_WEB_VIEWER_READONLY=no \
   -v /applis/:/folder-to-scan/ \
   -p 3000:3000 abesesr/ncdu-web-viewer
 ```
