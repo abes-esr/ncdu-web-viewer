@@ -28,7 +28,7 @@ docker run --rm \
   -e NCDU_WEB_VIEWER_SCAN_FROM=folder \
   -e NCDU_WEB_VIEWER_READONLY=no \
   -v /applis/:/folder-to-scan/ \
-  -p 3000:3000 abesesr/ncdu-web-viewer:0.0.0
+  -p 3000:3000 abesesr/ncdu-web-viewer:1.0.0
 ```
 
 Then open your web browser (replace 127.0.0.1 by your server ip): http://127.0.0.1:3000/
@@ -50,7 +50,7 @@ scp my-server-to-scan:/tmp/ncdu-dump-applis.json /opt/
 docker run --rm \
   -e NCDU_WEB_VIEWER_SCAN_FROM=dump \
   -v /opt/ncdu-dump-applis.json:/ncdu-dump.json \
-  -p 3000:3000 abesesr/ncdu-web-viewer:0.0.0
+  -p 3000:3000 abesesr/ncdu-web-viewer:1.0.0
 ```
 
 Then open your web browser (replace 127.0.0.1 by your server ip): http://127.0.0.1:3000/wetty/
