@@ -1,5 +1,9 @@
 # ncdu-web-viewer
 
+[![Docker Pulls](https://img.shields.io/docker/pulls/abesesr/ncdu-web-viewer.svg)](https://hub.docker.com/r/abesesr/ncdu-web-viewer/)
+[![ncdu-web-viewer ci](https://github.com/abes-esr/ncdu-web-viewer/actions/workflows/build-test-pubtodockerhub.yml/badge.svg)](https://github.com/abes-esr/ncdu-web-viewer/actions/workflows/build-test-pubtodockerhub.yml)
+
+
 Web interface used to visualize and navigate through [ncdu](https://dev.yorhel.nl/ncdu) results (Ncdu is a disk usage analyzer).
 
 This tool could be used internaly at [Abes](https://abes.fr) for analyze and cleanup steps when manipulating massive data. Thanks to the web interface it makes easier to give this tool to a librarian. Thanks to the ``dump`` feature, it makes easier to analyze very big folder so that only one guy will generate the export/dump of a given folder and all the staff will be able to view it concurrently without generating performance isues on this big folder.
