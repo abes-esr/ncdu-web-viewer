@@ -81,6 +81,8 @@ This [repository](https://github.com/abes-esr/ncdu-web-viewer-docker/) gives a d
 Use this github action, run the workflow and choose a free incremenal version respecting the sementic versioning rulez:
 https://github.com/abes-esr/ncdu-web-viewer/actions/workflows/create-release.yml
 
+![image](https://github.com/abes-esr/ncdu-web-viewer/assets/328244/1cdbf9ce-126b-49d8-9061-8580296115b7)
+
 ## Tools used
 
 - [wetty](https://github.com/butlerx/wetty)
