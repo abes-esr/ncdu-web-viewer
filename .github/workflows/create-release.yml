@@ -49,7 +49,7 @@ jobs:
           # - pousser le tout sur le dépôt github
           git config --global user.email "github-action@noreply"
           git config --global user.name "Github Action"
-          sed -i "s#abesesr/ncdu-web-viewer:[0-9]+\.[0-9]+\.[0-9]+#abesesr/ncdu-web-viewer:$NEW_TAG#g" README.md
+          sed -i "s#abesesr/ncdu-web-viewer:[0-9]\+\.[0-9]\+\.[0-9]\+#abesesr/ncdu-web-viewer:$NEW_TAG#g" README.md
           git add .
           git commit -m "Version $NEW_TAG"
           git tag $NEW_TAG
