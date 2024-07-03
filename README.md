@@ -78,7 +78,8 @@ This [repository](https://github.com/abes-esr/ncdu-web-viewer-docker/) gives a d
 
 ## Generating a new version of this tool
 
-TODO
+Use this github action, run the workflow and choose a free incremenal version respecting the sementic versioning rulez:
+https://github.com/abes-esr/ncdu-web-viewer/actions/workflows/create-release.yml
 
 ## Tools used
 
